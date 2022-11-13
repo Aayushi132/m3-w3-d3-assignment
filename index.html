@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Pacmen</title>
+    <!-- DO NOT CHANGE THIS LINE OF CODE -->
+    <script src="./Solution/pacmensolution.js"></script>
+  </head>
+  <style>
+    #canvas-wrap {
+      position: relative;
+      width: 800px;
+      height: 600px;
+    }
+    #canvas-wrap canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+  </style>
+
+  <body id="canvas-wrap">
+    <div id="game" style="position: absolute; z-index: 1;">
+      <button id="addBtn" onclick="makeOne()" width="200" height="30">
+        Add PacMan
+      </button>
+      <button id="startBtn" onclick="update()" width="200" height="30">
+        Start Game
+      </button>
+    </div>
+    <canvas id="myCanvas"></canvas>
+  </body>
+  <script src="pacmen.js"></script>
+</html>
